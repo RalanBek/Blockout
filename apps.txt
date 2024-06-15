@@ -1,0 +1,3 @@
+steam.exe
+Solitaire Forever II.exe
+Riot Client.exe
