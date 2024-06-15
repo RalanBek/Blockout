@@ -8,24 +8,41 @@ datetime
 schedule
 psutil
 ```
+
 ### Task Scheduler
 #### Windows
 Open your Task Scheduler. Under Actions > Task Scheduler Library click on `Create Task...`
+
 Enter a name (e.g. `Blocker`)
+
 ##### General
 Select `Run whether user is logged on or not` (it should still work for the first option, but I selected this one)
+
 Tick `Do not store password...`
+
 Tick `Run with highest privileges`
+
 Tick `Hidden`
+
 ##### Triggers
 Add a new trigger, select to begin the task `At log on` for any user or specific user, based on your preferences.
+
 Make sure the `Enabled` checkbox is ticked.
+
 ##### Actions
 Add a new action. `Start a program` should be the default option, if not select that.
-Browse to your clone of this repository and select the `blockout.bat` file. 
+
+Browse to your clone of this repository and select the `blockout.bat` file.
+
+The `Start in (optional):` input should have the path to the repository (e.g. `E:/Projects/Blockout/`)
+
 Click `OK`.
 
-To finalise the task, click `OK`. It should appear in the task list. You can right click on the task you created and click `Run`. If it is in the set hours you shouldn't be able to load any of the websites you listed in `sites.txt` or applications in `apps.txt`.
+To finalise the task, click `OK`.
+
+It should appear in the task list.
+You can right click on the task you created and click `Run`.
+If it is in the set hours you shouldn't be able to load any of the websites you listed in `sites.txt` or applications in `apps.txt`.
 
 ## Use
 ### Applications
